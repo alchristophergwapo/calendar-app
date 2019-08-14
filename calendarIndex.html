@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Calendar</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container col-lg-3" style="padding-right: 25%;padding-left: 25%;padding-bottom: 5%;">
+    <div class="card">
+        <h3 class="card" id="monthAndYear"></h3>
+        <table class="table" id="calendar" >
+            <thead>
+            <tr style="color: ">
+                <th style=" padding: 20px">Sun</th>
+                <th style=" padding: 20px">Mon</th>
+                <th style=" padding: 20px">Tue</th>
+                <th style=" padding: 20px">Wed</th>
+                <th style=" padding: 20px">Thu</th>
+                <th style=" padding: 20px">Fri</th>
+                <th style=" padding: 20px">Sat</th>
+            </tr>
+            </thead>
+
+            <tbody id="calendar-body">
+
+            </tbody>
+        </table>
+
+        <div class="form">
+
+            <button id="previous" onclick="previous()" style="padding: 10px;margin-top: 10px;width: 100px">Previous</button>
+
+            <button id="next" onclick="next()" style="padding: 10px;margin-top: 10px;width: 100px">Next</button>
+        </div>
+        <br/>
+        <form class="form">
+            <label class="lead" for="month"> SET: </label>
+            <select name="month" id="month" onchange="jump()" style="padding: 10px;width: 100px">
+                <option value=0>Jan</option>
+                <option value=1>Feb</option>
+                <option value=2>Mar</option>
+                <option value=3>Apr</option>
+                <option value=4>May</option>
+                <option value=5>Jun</option>
+                <option value=6>Jul</option>
+                <option value=7>Aug</option>
+                <option value=8>Sep</option>
+                <option value=9>Oct</option>
+                <option value=10>Nov</option>
+                <option value=11>Dec</option>
+            </select>
+
+
+            <label for="year"></label><select name="year" id="year" onchange="jump()" style="padding: 10px;width: 100px">
+  
+            <option value=2000>2000</option>
+            <option value=2001>2001</option>
+            <option value=2002>2002</option>
+            <option value=2003>2003</option>
+            <option value=2004>2004</option>
+            <option value=2005>2005</option>
+            <option value=2006>2006</option>
+            <option value=2007>2007</option>
+            <option value=2008>2008</option>
+            <option value=2009>2009</option>
+            <option value=2010>2010</option>
+            <option value=2011>2011</option>
+            <option value=2012>2012</option>
+            <option value=2013>2013</option>
+            <option value=2014>2014</option>
+            <option value=2015>2015</option>
+            <option value=2016>2016</option>
+            <option value=2017>2017</option>
+            <option value=2018>2018</option>
+            <option value=2019>2019</option>
+        </select></form>
+        <button id="weather" style="padding: 10px;margin-top: 10px;">Check weather update</button>
+    </div>
+</div>
+<script src="calendar.js"></script>
+
+
+
+</body>
+</html>
